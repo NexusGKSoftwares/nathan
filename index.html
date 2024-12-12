@@ -109,19 +109,62 @@
             }
         
             /* About Section */
-            .about-bg {
-                background: linear-gradient(145deg, #ffffff, #f1f1f1);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                padding: 30px;
-                border-radius: 10px;
-            }
-        
-            .about-bg p {
-                font-size: 1.2rem;
-                color: #555;
-                line-height: 1.6;
-            }
-        
+            .about {
+        background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background-image: url('images/about-background.jpg'); /* Optional background image */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-bg h2 {
+        font-size: 2.5rem;
+        color: #007bff;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .about-bg p {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* About Image */
+    .about-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .about-image:hover {
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-bg h2 {
+            font-size: 2rem;
+        }
+
+        .about-bg p {
+            font-size: 1rem;
+        }
+
+        .about-image {
+            width: 150px;
+            height: 150px;
+        }
+    }
             /* Testimonials Section */
             .testimonial {
                 background: #ffffff;
@@ -420,13 +463,13 @@
     </script>
     
 <!-- About Section -->
-<section id="about" class="section">
+<section id="about" class="about">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 about-bg d-flex flex-column align-items-center">
                 <h2 class="text-center text-primary mb-4">About Us</h2>
-                <p class="text-center mb-4">We are a community-driven group committed to uplifting lives through collaborative efforts. Our mission is to empower individuals and transform communities ❤️.</p>
-                <img src="images/about-image.jpg" alt="About Us" class="about-image rounded-circle shadow-lg mb-4">
+                <p class="text-center text-white mb-4">We are a community-driven group committed to uplifting lives through collaborative efforts. Our mission is to empower individuals and transform communities ❤️.</p>
+                <img src="image.jpg" alt="About Us" class="about-image rounded-circle shadow-lg mb-4">
             </div>
         </div>
     </div>
