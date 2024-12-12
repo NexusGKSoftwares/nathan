@@ -1,20 +1,25 @@
-# Code of Conduct 🧑‍🤝‍🧑
 
-## Our Pledge:
-We are committed to making participation in this project a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+### MIT License
+```
+MIT License
 
-## Our Standards:
-Examples of behavior that contributes to a positive environment include:
-- Be kind and respectful to others. 🌈
-- Use inclusive and welcoming language. 🤝
-- Offer constructive feedback and be open to receiving it. 📚
+Copyright (c) 2024 MWARE Self-Help Group
 
-Examples of unacceptable behavior include:
-- Harassment, abuse, or discrimination of any kind. 🚫
-- Publishing private information without consent. 🔒
-- Insulting or offensive comments. 🛑
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Enforcement:
-If you witness or experience any unacceptable behavior, please contact the project maintainers immediately. We will take appropriate action, which may include warnings or banning offenders from participating in the project.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Thank you for being a part of the Mr&Miss UoN event! 🎉
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
