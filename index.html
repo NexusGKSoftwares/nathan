@@ -140,31 +140,32 @@
 
     <!-- Countdown Script -->
     <script>
-        const eventDate = new Date('2024-12-31T00:00:00').getTime();
-
+        // Set the event date
+        const eventDate = new Date('2024-12-31T00:00:00Z').getTime();
+    
         const countdown = setInterval(() => {
             const now = new Date().getTime();
             const distance = eventDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000)) / 1000);
-
-            document.getElementById("days").innerText = days;
-            document.getElementById("hours").innerText = hours;
-            document.getElementById("minutes").innerText = minutes;
-            document.getElementById("seconds").innerText = seconds;
-
-            if (distance < 0) {
+    
+            if (distance >= 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % 1000) / 1000);
+    
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+            } else {
                 clearInterval(countdown);
                 document.querySelector(".countdown").innerText = "Event Started!";
             }
         }, 1000);
-
-        function thank() {
-            alert("Thank you for visiting!");
-        }
+    
+        // Debugging: Log to ensure the script runs
+        console.log("Countdown script loaded successfully.");
     </script>
+    
 </body>
 </html>
