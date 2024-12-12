@@ -140,8 +140,7 @@
 
     <!-- Countdown Script -->
     <script>
-        // Set the event date
-        const eventDate = new Date('2024-12-31T00:00:00Z').getTime();
+        const eventDate = new Date('2024-12-31T00:00:00Z').getTime(); // Explicitly UTC
     
         const countdown = setInterval(() => {
             const now = new Date().getTime();
@@ -151,8 +150,9 @@
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % 1000) / 1000);
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000); // Fixed seconds calculation
     
+                // Update countdown UI
                 document.getElementById("days").innerText = days;
                 document.getElementById("hours").innerText = hours;
                 document.getElementById("minutes").innerText = minutes;
@@ -163,9 +163,9 @@
             }
         }, 1000);
     
-        // Debugging: Log to ensure the script runs
-        console.log("Countdown script loaded successfully.");
+        console.log("Event Date:", eventDate); // Debug: Check if the event date is correct
     </script>
+    
     
 </body>
 </html>
